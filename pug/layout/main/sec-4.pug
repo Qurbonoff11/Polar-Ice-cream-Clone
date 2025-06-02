@@ -1,6 +1,7 @@
 section.our-products
   .container
-    h1 Our Product
+    h2.heading1 Our Product
+
     ul.links-products
       -
         const links = [
@@ -26,42 +27,55 @@ section.our-products
             price: "$19.55",
             oldPrice: "$22.55",
             btnClass: "buy-now-btn",
-            btnTxt: "Buy Now"
+            btnTxt: "Buy Now",
+            imgClass: "img-card-1"
           },
           {
             cardCount: "card-2",
-            title: "Brown bread",
+            title: "Cayenne chocolate",
             desc: "Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.",
             price: "$19.55",
             oldPrice: "$22.55",
             btnClass: "buy-now-btn",
-            btnTxt: "Buy Now"
+            btnTxt: "Buy Now",
+            imgClass: "img-card-2"
           },
           {
             cardCount: "card-3",
-            title: "Brown bread",
+            title: "Sweet corn",
             desc: "Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.",
             price: "$19.55",
             oldPrice: "$22.55",
             btnClass: "buy-now-btn",
-            btnTxt: "Buy Now"
-          },
-          {
-            cardCount: "card-4",
-            title: "Brown bread",
-            desc: "Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.",
-            price: "$19.55",
-            oldPrice: "$22.55",
-            btnClass: "buy-now-btn",
-            btnTxt: "Buy Now"
+            btnTxt: "Buy Now",
+            imgClass: "img-card-3"
           }
         ]
 
       each card in cards
-        div(class=`${card.cardCount}`)
-          h2= card.title
-          p= card.desc
-          .price-box
-            span= card.price
-            psan.old-price= card.oldPrice
-          button(class=`${card.btnClass}`)= card.btnTxt
+        div(class=`${card.cardCount} card`)
+          .img-box
+            div(class=`${card.imgClass}`)
+          .text-box
+            h2= card.title
+            p= card.desc
+            .price-box
+              span= card.price
+              psan.old-price= card.oldPrice
+            button(class=`${card.btnClass}`)= card.btnTxt
+
+      div(class="last--card")
+        .card--box
+          .head-box
+            .img-circle
+            .txt-box
+              h3 Adele A. McNeill
+              p american
+          .body-box
+            p Thanks a lot for the prompt service. Really appreciate. Excellence taste in Every Bite.Add a joy of best Taste. Foodie Moments.
+          .footer-box
+            i(class="ri-arrow-left-wide-line")
+            div.img-cirlce-1
+            div.img-cirlce-2
+            div.img-cirlce-3
+            i(class="ri-arrow-right-wide-line")
