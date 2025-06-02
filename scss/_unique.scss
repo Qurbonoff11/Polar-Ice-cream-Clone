@@ -1,0 +1,23 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+
+.buy-now-btn{
+  font-family: $Hind-Madurai;
+  font-size: $fs-16;
+  background-color: $bg-pink;
+  color: $txt-white;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.buy-now-btn:hover{
+  transform: scale(1.05);
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}

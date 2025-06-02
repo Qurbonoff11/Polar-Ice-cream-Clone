@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.buy-now-btn {
+  font-family: "Hind Madurai";
+  font-size: 16px;
+  background-color: #D23166;
+  color: #fff;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.buy-now-btn:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 7rem;
+  background-color: #FBF0F4;
+}
+
+.header .container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container .logo-img {
+  height: 5rem;
+}
+
+.header .container .list-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header .container .list-links a {
+  color: #0A0808;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .container .list-links a:hover {
+  color: #D23166;
+}
+
+.hero-sec {
+  width: 100%;
+  height: 700px;
+  background-color: #FBF0F4;
+}
+
+.hero-sec .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-sec .container .left--side {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.hero-sec .container .left--side h4 {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.hero-sec .container .left--side h1 {
+  width: 90%;
+  font-size: 58px;
+  font-family: "Fredoka";
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.hero-sec .container .left--side h1 span {
+  color: #D23166;
+}
+
+.hero-sec .container .left--side p {
+  font-size: 14px;
+  color: #150101;
+  font-family: "Roboto";
+  width: 65%;
+  margin-bottom: 3rem;
+}
+
+.hero-sec .container .right--side .img-cont {
+  width: 30rem;
+  height: 40rem;
+  background-image: url("../assets/img/ice-cream-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Delivery {
+  width: 100%;
+  height: 22rem;
+}
+
+.Delivery .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Delivery .container .cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Delivery .container .cards .card {
+  width: 250px;
+  height: 200px;
+  padding: 1.5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.Delivery .container .cards .card:hover {
+  box-shadow: 5px 5px 12px 1px rgba(0, 0, 0, 0.05);
+}
+
+/*# sourceMappingURL=style.css.map */

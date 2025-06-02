@@ -1,0 +1,26 @@
+{
+  "name": "polar-ice-cream-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass":"npx sass --watch ./scss/style.scss:./style/style.css",
+    "pug":"npx pug -w ./pug/index.pug -o ./ -P"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qurbonoff11/Polar-Ice-cream-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qurbonoff11/Polar-Ice-cream-Clone/issues"
+  },
+  "homepage": "https://github.com/Qurbonoff11/Polar-Ice-cream-Clone#readme",
+  "devDependencies": {
+    "pug": "^3.0.3",
+    "sass": "^1.89.1"
+  }
+}

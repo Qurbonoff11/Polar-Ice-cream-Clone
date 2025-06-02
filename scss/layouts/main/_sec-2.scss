@@ -1,0 +1,39 @@
+@use "../../variables" as *;
+@use "../../mixins" as *;
+
+.Delivery {
+  width: 100%;
+  height: 22rem;
+}
+
+.Delivery .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Delivery .container .cards{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Delivery .container .cards .card{
+  width: 250px;
+  height: 200px;
+  padding: 1.5rem;
+  background-color: $bg-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  transition: all .3s ease-in-out;
+}
+.Delivery .container .cards .card:hover{
+  box-shadow: 5px 5px 12px 1px rgba(0, 0, 0, 0.05);
+}

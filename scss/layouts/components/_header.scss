@@ -1,0 +1,40 @@
+@use "../../variables" as *;
+@use "../../mixins" as *;
+
+.header{
+  width: 100%;
+  height: 7rem;
+  background-color: $bg-openpink;
+}
+
+.header .container{
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container .logo-img{
+  height: 5rem;
+}
+
+.header .container .list-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.header .container .list-links a{
+  color: $txt-black;
+  font-family: $roboto;
+  font-weight: $fw-6;
+  font-size: $fs-16;
+  transition: all .3s ease-in-out;
+}
+.header .container .list-links a:hover{
+  color: $txt-pink;
+}

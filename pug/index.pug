@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    //- SEO
+    meta(name="description", content="Polar. This is web site Ice-Cream shoping site")
+    meta(name="keywords", content="Polar, web site, Ice-Cream, ice-cream shoping")
+
+    //- FAVICON
+    link(rel="shortcut icon", href="", type="image/x-icon")
+
+    //- REMIX ICON
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer")
+
+    link(rel="stylesheet", href="./style/style.css")
+
+    //- TITLE
+    title Polar - Ice-Cream
+  body
+
+    //- HEADER
+    include ./layout/components/header.pug
+
+    //- SECTIONS
+    include ./layout/main/sec-1.pug
+    include ./layout/main/sec-2.pug
+
+    script(src="./js/script.js")
