@@ -1,0 +1,67 @@
+section.our-products
+  .container
+    h1 Our Product
+    ul.links-products
+      -
+        const links = [
+          {text: "ise cream"},
+          {text: "cayenne chocolate"},
+          {text: "cake batter"},
+          {text: "candy cane"},
+          {text: "platters"},
+          {text: "dessert"},
+        ]
+
+      each link in links
+        li
+          a(href="#")= link.text
+
+    .product-cards
+      -
+        const cards = [
+          {
+            cardCount: "card-1",
+            title: "Brown bread",
+            desc: "Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.",
+            price: "$19.55",
+            oldPrice: "$22.55",
+            btnClass: "buy-now-btn",
+            btnTxt: "Buy Now"
+          },
+          {
+            cardCount: "card-2",
+            title: "Brown bread",
+            desc: "Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.",
+            price: "$19.55",
+            oldPrice: "$22.55",
+            btnClass: "buy-now-btn",
+            btnTxt: "Buy Now"
+          },
+          {
+            cardCount: "card-3",
+            title: "Brown bread",
+            desc: "Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.",
+            price: "$19.55",
+            oldPrice: "$22.55",
+            btnClass: "buy-now-btn",
+            btnTxt: "Buy Now"
+          },
+          {
+            cardCount: "card-4",
+            title: "Brown bread",
+            desc: "Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food scene.",
+            price: "$19.55",
+            oldPrice: "$22.55",
+            btnClass: "buy-now-btn",
+            btnTxt: "Buy Now"
+          }
+        ]
+
+      each card in cards
+        div(class=`${card.cardCount}`)
+          h2= card.title
+          p= card.desc
+          .price-box
+            span= card.price
+            psan.old-price= card.oldPrice
+          button(class=`${card.btnClass}`)= card.btnTxt
