@@ -55,12 +55,11 @@ section.our-products
       each card in cards
         div(class=`${card.cardCount} card`)
           .img-box
-            div(class=`${card.imgClass}`)
+            div(class=`${card.imgClass} card-img`)
           .text-box
             h2= card.title
             p= card.desc
-            .price-box
-              span= card.price
+            span= card.price
               psan.old-price= card.oldPrice
             button(class=`${card.btnClass}`)= card.btnTxt
 
@@ -75,7 +74,9 @@ section.our-products
             p Thanks a lot for the prompt service. Really appreciate. Excellence taste in Every Bite.Add a joy of best Taste. Foodie Moments.
           .footer-box
             i(class="ri-arrow-left-wide-line")
-            div.img-cirlce-1
-            div.img-cirlce-2
-            div.img-cirlce-3
+            div(class="img-cirlce-1 imgs")
+            div(class="img-cirlce-2 imgs")
+            div(class="img-cirlce-3 imgs")
             i(class="ri-arrow-right-wide-line")
+        div
+          .last-card-img
