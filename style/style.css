@@ -398,4 +398,9 @@ a {
   background-image: url("../assets/img/last-card-img.png");
 }
 
+.simple-way {
+  width: 100%;
+  background-color: #F8EDF0;
+}
+
 /*# sourceMappingURL=style.css.map */

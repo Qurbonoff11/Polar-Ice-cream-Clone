@@ -1,0 +1,7 @@
+@use "../../mixins" as *;
+@use "../../variables" as *;
+
+.simple-way{
+  width: 100%;
+  background-color: $bg-openpink;
+}
