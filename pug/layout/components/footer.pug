@@ -2,19 +2,20 @@ footer
   .container
     .left-side
       a(href="#")
-        img(src="./assets/img/logo.png", alt="alt")
+        img(src="./assets/img/logo.png", alt="alt" class="footer-logo")
       p Some food has looked so awful that it's looked like something that the dog's brought home.
       span Fllow Us
       ul
         -
-          let classes = [
-            {class: "facebook"},
-            {class: "twiter"},
-            {class: "instagram"},
-            {class: "linked"}
+          let socials = [
+            {class: "facebook", href: "https://www.facebook.com"},
+            {class: "twiter", href: "https://x.com"},
+            {class: "instagram", href: "https://www.instagram.com"},
+            {class: "linked", href: "https://www.linkedin.com"}
           ]
-        each classes in clas
-          li(class=`${clas.class}`)
+        each social in socials
+          li
+            a(href=`${social.href}` target="_blank" class=`${social.class}`)
     .left-center-side
       ul
         -
@@ -26,8 +27,37 @@ footer
             {text: "Testimonials"},
             {text: "Contact Us"}
           ]
-        each footerLinks in link
+        each link in footerLinks
           li
             a(href="#")= link.text
     .right-center-side
+      ul
+        -
+          const datalist = [
+            {text: "Delivery Information"},
+            {text: "Privacy Policy"},
+            {text: "Terms & Condition"},
+            {text: "Search Terms"},
+            {text: "Order & Return"}
+          ]
+
+        each link in datalist
+          li
+            a(href="#")= link.text
     .right-side
+      .email-input
+        label(for="email") Newsletter
+        .input
+          input(type="email" id="email" placeholder="Your Email")
+          button Subscribe
+      ul
+        -
+          const images = [
+            {src: "Mastercard.png"},
+            {src: "PayPal.png"},
+            {src: "visa.png"}
+          ]
+
+        each img in images
+          li
+            img(src=`./assets/img/pays/${img.src}`, alt="pays logos")
