@@ -587,6 +587,12 @@ footer .container .left-side ul a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  opacity: 70%;
+  transition: all 0.3s ease-in-out;
+}
+footer .container .left-side ul a:hover {
+  opacity: 100%;
+  transform: scale(1.2);
 }
 footer .container .left-side ul .facebook {
   background-image: url("../assets/img/social/facebook.png");

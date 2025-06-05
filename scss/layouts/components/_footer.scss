@@ -53,7 +53,15 @@ footer{
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
+          opacity: 70%;
+          transition: all .3s ease-in-out;
+
+          &:hover{
+            opacity: 100%;
+            transform: scale(1.2);
+          }
         }
+
         .facebook{
           background-image: url("../assets/img/social/facebook.png");
         }
