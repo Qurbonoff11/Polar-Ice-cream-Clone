@@ -680,6 +680,10 @@ footer .container .right-side .email-input .input button {
   border-radius: 0.5rem;
   transform: scale(1.05);
   cursor: pointer;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
 }
 footer .container .right-side ul {
   display: flex;

@@ -156,6 +156,10 @@ footer{
             border-radius: .5rem;
             transform: scale(1.05);
             cursor: pointer;
+            color: $txt-white;
+            font-family: $roboto;
+            font-weight: $fw-5;
+            font-size: $fs-16;
           }
         }
       }
