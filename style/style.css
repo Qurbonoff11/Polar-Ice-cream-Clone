@@ -579,8 +579,8 @@ footer .container .left-side ul {
   gap: 1rem;
 }
 footer .container .left-side ul a {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
