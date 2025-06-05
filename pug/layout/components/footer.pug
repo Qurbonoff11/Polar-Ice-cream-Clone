@@ -1,0 +1,33 @@
+footer
+  .container
+    .left-side
+      a(href="#")
+        img(src="./assets/img/logo.png", alt="alt")
+      p Some food has looked so awful that it's looked like something that the dog's brought home.
+      span Fllow Us
+      ul
+        -
+          let classes = [
+            {class: "facebook"},
+            {class: "twiter"},
+            {class: "instagram"},
+            {class: "linked"}
+          ]
+        each classes in clas
+          li(class=`${clas.class}`)
+    .left-center-side
+      ul
+        -
+          let footerLinks = [
+            {text: "Home"},
+            {text: "Product"},
+            {text: "Blog"},
+            {text: "Pricing"},
+            {text: "Testimonials"},
+            {text: "Contact Us"}
+          ]
+        each footerLinks in link
+          li
+            a(href="#")= link.text
+    .right-center-side
+    .right-side

@@ -6,15 +6,27 @@ section.simple-way
       h2 Simple Way To Order Your Food
       p Some food has looked so awful that it's looked like something that the dog's brought home, yet after one mouthful I've been left eating my thoughts.
       ul
-        li
-          i(class="ri-bowl-line")
-          | Select Your Food
-        li
-          i(class="ri-shopping-cart-2-line")
-          | Add To Cart
-        li
-          i(class="ri-edit-2-line")
-          | Order Your Food
+
+        -
+          const values = [
+            {
+              class: "ri-bowl-line",
+              text: "Select Your Food"
+            },
+            {
+              class: "ri-shopping-cart-2-line",
+              text: "Add To Cart"
+            },
+            {
+              class: "ri-edit-2-line",
+              text: "Order Your Food"
+            },
+          ]
+        each value in values
+          li
+            i(class=`${value.class}`)
+            = value.text
+
       .market-links
-        a(href="https://play.google.com/")
-        a(href="https://www.apple.com/app-store")
+        a(href="https://play.google.com/" class="play-market")
+        a(href="https://www.apple.com/app-store" class="app-store")

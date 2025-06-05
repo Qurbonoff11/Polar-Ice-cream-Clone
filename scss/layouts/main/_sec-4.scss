@@ -105,6 +105,7 @@
           span {
             font-size: $fs-20;
             font-family: $Hind-Madurai;
+            font-weight: $fw-6;
             margin-bottom: 0.7rem;
 
             .old-price {
@@ -169,6 +170,12 @@
             align-items: center;
             gap: 1rem;
 
+            i{
+              color: $bg-pink;
+              font-size: $fs-18;
+              cursor: pointer;
+            }
+
             .imgs{
               background-position: center;
               background-size: contain;
@@ -206,6 +213,5 @@
         }
       }
     }
-
   }
 }
